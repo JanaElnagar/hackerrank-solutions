@@ -1,0 +1,22 @@
+# ──────────────────────────────────────────────────
+# Link        https://www.hackerrank.com/challenges/floor-ceil-and-rint/problem?isFullScreen=true
+# Problem     Floor, Ceil and Rint
+# Difficulty  Easy
+# Subdomain   Numpy
+# Platform    HackerRank
+# Language    pypy3
+# Status      Accepted
+# Submitted   2026-08-11, 10:32 p.m.
+# ──────────────────────────────────────────────────
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import numpy as np
+np.set_printoptions(legacy='1.13')
+
+input_str = input()
+a = np.array(list(map(float,input_str.split())))
+
+
+print(np.floor(a))
+print(np.ceil(a))
+print(np.rint(a))
